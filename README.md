@@ -1,222 +1,139 @@
-\# Walmart Sales Analysis – SQL
+# Walmart Sales Analysis – SQL
 
+## Project Overview
 
+This project analyzes Walmart sales transaction data using SQL to understand sales performance, customer behavior, product performance, and sales trends.
 
-\## Project Overview
+The project was developed as a practical SQL data-analysis project, covering data preparation, exploratory analysis, aggregations, ranking, customer segmentation, and time-based sales analysis.
 
-
-
-This project analyzes Walmart sales transaction data using SQL to understand overall sales performance, customer activity, product-line performance, and sales trends.
-
-
-
-The project was developed as a practical SQL data-analysis project, focusing on writing queries, aggregating transaction data, identifying patterns, and converting SQL results into meaningful business insights.
-
-
-
-\## Objectives
-
-
+## Objectives
 
 The main objectives of the analysis were to:
 
+* Analyze overall sales and transaction performance
+* Evaluate sales performance across stores
+* Analyze sales by payment method
+* Compare customer types and gender
+* Evaluate product-line performance
+* Analyze monthly and weekly sales trends
+* Identify high-value customers
+* Identify top-performing product lines
+* Calculate month-over-month sales growth
+* Segment customers based on purchasing behavior
+* Extract business insights from SQL analysis results
 
+## Tools Used
 
-\* Analyze overall transaction and sales performance
+* SQL
+* SQLite
+* GitHub
 
-\* Identify the most valuable customers
+## Key Analysis Performed
 
-\* Identify top-performing product lines
+### 1. Overall Sales KPI
 
-\* Analyze month-over-month sales growth
+Calculated key overall sales metrics from the transaction data, including:
 
-\* Segment customers based on purchasing behavior
+* Total transactions
+* Unique customers
+* Total sales
+* Average transaction value
 
-\* Extract actionable business insights from the SQL results
+### 2. Sales Performance by Store
 
+Analyzed sales performance across stores to compare transaction activity and sales contribution.
 
+### 3. Sales by Payment Method
 
-\## Tools Used
+Analyzed sales performance across different payment methods to understand transaction distribution.
 
+### 4. Sales by Customer Type and Gender
 
+Compared sales performance across customer types and gender categories to identify purchasing patterns.
 
-\* SQL
+### 5. Product Performance
 
-\* SQLite
+Analyzed individual product performance to identify products contributing to overall sales.
 
-\* SQL Data Analysis
+### 6. Monthly Sales Trend
 
-\* GitHub
+Analyzed sales across months to identify changes and patterns in monthly sales performance.
 
+### 7. Weekly Sales Performance
 
+Analyzed sales performance across weeks to understand short-term sales trends.
 
-\## Key Analysis Performed
+### 8. Customer Ranking
 
+Ranked customers based on sales contribution to identify high-value customers.
 
+### 9. Top Product Lines
 
-\### 1. Overall Sales Analysis
+Ranked product lines based on sales performance to identify the strongest-performing categories.
 
+### 10. Month-over-Month Sales Growth
 
+Compared monthly sales with the previous month to evaluate sales growth and decline over time.
 
-The project calculates basic overall sales metrics from the transaction data, including:
+### 11. Customer Segmentation
 
+Segmented customers based on their purchasing behavior to understand different customer groups.
 
-
-\* Total transactions
-
-\* Unique customers
-
-\* Total sales
-
-\* Average transaction value
-
-
-
-\### 2. Top Customers
-
-
-
-Customer-level sales were analyzed to identify customers contributing the highest sales value.
-
-
-
-\### 3. Top Product Lines
-
-
-
-Product-line performance was analyzed to identify the product lines generating the highest sales.
-
-
-
-\### 4. Month-over-Month Growth
-
-
-
-Monthly sales were compared to the previous month to understand sales growth and changes over time.
-
-
-
-\### 5. Customer Segmentation
-
-
-
-Customers were grouped based on their purchasing behavior to identify different customer segments and understand their contribution to the business.
-
-
-
-\## Dataset Summary
-
-
+## Dataset Summary
 
 The analyzed dataset contains:
 
-
-
-\* \*\*30 transactions\*\*
-
-\* \*\*20 unique customers\*\*
-
-\* \*\*Total sales: 7,644.00\*\*
-
-
+* **30 transactions**
+* **20 unique customers**
+* **Total sales: 7,644.00**
 
 These figures represent the dataset used in this project and the results obtained from the completed SQL analysis.
 
-
-
-\## Business Insights
-
-
-
-The detailed business findings from the completed SQL analysis are documented separately in:
-
-
-
-`business\_insights.md`
-
-
-
-\## Project Structure
-
-
-
-```text
-
-Walmart-Sales-Analysis-SQL/
-
-│
-
-├── README.md
-
-│
-
-├── business\_insights.md
-
-│
-
-├── SQL/
-
-│   └── walmart\_sales\_analysis.sql
-
-│
-
-└── screenshots/
-
-&#x20;   ├── screenshot\_01
-
-&#x20;   ├── screenshot\_02
-
-&#x20;   ├── ...
-
-&#x20;   └── screenshot\_11
-
-```
-
-
-
-\## Skills Demonstrated
-
-
+## SQL Skills Demonstrated
 
 This project demonstrates practical SQL skills including:
 
+* SELECT statements
+* Filtering data using WHERE
+* Aggregate functions
+* GROUP BY
+* ORDER BY
+* CASE expressions
+* Subqueries
+* Common Table Expressions (CTEs)
+* Window functions
+* Customer-level analysis
+* Product-level analysis
+* Ranking
+* Time-based analysis
+* Month-over-month analysis
+* Customer segmentation
 
+## Project Structure
 
-\* SELECT statements
+```text
+Walmart-Sales-Analysis-SQL/
+│
+├── README.md
+│
+├── Walmart_Sales_Analysis.sql
+│
+└── Screenshots/
+    ├── 4.1_Overall_Sales_KPI_011024.png
+    ├── 4.2_Sales_Performance_by_Store_011040.png
+    ├── 4.3_Sales_by_Payment_Method_011042.png
+    ├── 4.4_Sales_by_Customer_type_and_Gender_011043.png
+    ├── 4.5_Performance_for_Each_Product_011046.png
+    ├── 4.6_Monthly_Sales_Trend_011048.png
+    ├── 4.7_Weekly_Sales_Performance_011050.png
+    ├── 5.1_Ranking_Customers_from_High_to_Low_011052.png
+    ├── 5.2_Top_Product_Lines_011055.png
+    ├── 5.3_MoM_Sales_Growth_011057.png
+    └── 5.4_Customer_Segmentation_011059.png
+```
 
-\* Filtering data
+## Project Outcome
 
-\* Aggregations
+This project demonstrates the practical use of SQL to analyze transactional sales data, evaluate customer and product performance, identify sales trends, and derive business-oriented insights from structured data.
 
-\* GROUP BY
-
-\* ORDER BY
-
-\* CASE expressions
-
-\* Subqueries
-
-\* Common Table Expressions (CTEs)
-
-\* Window functions
-
-\* Customer-level analysis
-
-\* Product-line analysis
-
-\* Month-over-month analysis
-
-\* Customer segmentation
-
-\* Translating SQL results into business insights
-
-
-
-\## Project Outcome
-
-
-
-The project demonstrates the complete process of taking transactional sales data, analyzing it using SQL, identifying important customer and product patterns, and presenting the resulting business insights in a structured manner.
-
-
-
+The complete SQL script and screenshots of the analysis results are included in this repository.
